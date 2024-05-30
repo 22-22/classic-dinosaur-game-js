@@ -1,0 +1,64 @@
+.game {
+    width: 600px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.dino {
+    width: 30px;
+    height: 60px;
+    position: relative;
+    top: 140px;
+    background-image: url("./assets/trex.webp");
+    background-size: 30px 60px;
+}
+
+.cactus {
+    width: 20px;
+    height: 60px;
+    position: relative;
+    top: 80px;
+    left: 580px;
+    background-image: url("./assets/cactus.webp");
+    background-size: 20px 60px;
+}
+
+.jump {
+    animation: jump 0.3s linear;
+}
+
+.move {
+    animation: move 2s infinite linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 140px;
+    }
+
+    25% {
+        top: 100px;
+    }
+
+    50% {
+        top: 50px;
+    }
+
+    75% {
+        top: 100px;
+    }
+
+    100% {
+        top: 140px;
+    }
+}
+
+@keyframes move {
+    0% {
+        left: 580px;
+    }
+
+    100% {
+        left: -20px;
+    }
+}
